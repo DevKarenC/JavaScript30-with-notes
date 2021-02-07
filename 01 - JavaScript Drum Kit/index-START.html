@@ -1,0 +1,101 @@
+<!-- Concepts Discussed -->
+<!-- data-attributes, attribute selectors, event listeners, audio element, keycode -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="keys">
+      <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+      </div>
+      <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">hihat</span>
+      </div>
+      <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">kick</span>
+      </div>
+      <div data-key="70" class="key">
+        <kbd>F</kbd>
+        <span class="sound">openhat</span>
+      </div>
+      <div data-key="71" class="key">
+        <kbd>G</kbd>
+        <span class="sound">boom</span>
+      </div>
+      <div data-key="72" class="key">
+        <kbd>H</kbd>
+        <span class="sound">ride</span>
+      </div>
+      <div data-key="74" class="key">
+        <kbd>J</kbd>
+        <span class="sound">snare</span>
+      </div>
+      <div data-key="75" class="key">
+        <kbd>K</kbd>
+        <span class="sound">tom</span>
+      </div>
+      <div data-key="76" class="key">
+        <kbd>L</kbd>
+        <span class="sound">tink</span>
+      </div>
+    </div>
+
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+
+    <script>
+      function playSound(e) {
+        // check to see if there is audio associated with the key pressed using attribute selector
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+
+        // if no audio associated with the event, then stop the function from running
+        if (!audio) return;
+
+        // rewind to the start for when the same key is pressed again
+        audio.currentTime = 0;
+
+        // play sound file
+        audio.play();
+
+        // grab an element with key class and with data key attribute of the key code
+        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+
+        // add css class of playing
+        key.classList.add("playing");
+      }
+
+      // Cool - we added the css styling for when the key is pressed, but they don't toggle like how we want them.
+      // To fix this effect, first get a list of all the keys.
+      const keys = document.querySelectorAll(".key");
+
+      // callback function to remove transition effect
+      function removeTransition(e) {
+        if (e.propertyName !== "transform") return;
+
+        // "this" is the "key" element, since this removeTransition function is used in the event listener attached to the "key" element
+        this.classList.remove("playing");
+      }
+
+      // loop through each key to attach event listener (we cannot attach event listener to the whole node list or array!)
+      keys.forEach((key) =>
+        key.addEventListener("transitionend", removeTransition)
+      );
+      window.addEventListener("keydown", playSound);
+    </script>
+  </body>
+</html>
