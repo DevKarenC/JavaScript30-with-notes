@@ -1,0 +1,112 @@
+<!-- CSS variables, :root pseudo-class, data-attributes, fallback value, documentElement, style.setProperty -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scoped CSS Variables and JS</title>
+  </head>
+  <body>
+    <h2>Update CSS Variables with <span class="hl">JS</span></h2>
+    <div class="controls">
+      <label for="spacing">Spacing:</label>
+      <!-- additional data attribute of data-sizing has been created to account for the input unit -->
+      <!-- remember that data attribute is just an attribute you can make -->
+      <!-- the correct syntax is data-attributeName = value -->
+      <input
+        id="spacing"
+        type="range"
+        name="spacing"
+        min="10"
+        max="200"
+        value="10"
+        data-sizing="px"
+      />
+
+      <label for="blur">Blur:</label>
+      <input
+        id="blur"
+        type="range"
+        name="blur"
+        min="0"
+        max="25"
+        value="10"
+        data-sizing="px"
+      />
+
+      <label for="base">Base Color</label>
+      <input id="base" type="color" name="base" value="#ffc600" />
+    </div>
+
+    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" />
+
+    <style>
+      /* defining CSS variables of base color, spacing, and blur in the root element of the HTML document*/
+      :root {
+        --base: #ffc600;
+        --spacing: 10px;
+        --blur: 10px;
+      }
+
+      /* padding, background, and filter properties on the img tag will change based on the variables above */
+      img {
+        padding: var(--spacing);
+        background: var(--base);
+        filter: blur(var(--blur));
+      }
+
+      .hl {
+        color: var(--base);
+      }
+
+      /* misc styles, nothing to do with CSS variables*/
+
+      body {
+        text-align: center;
+        background: #193549;
+        color: white;
+        font-family: "helvetica neue", sans-serif;
+        font-weight: 100;
+        font-size: 50px;
+      }
+
+      .controls {
+        margin-bottom: 50px;
+      }
+
+      input {
+        width: 100px;
+      }
+    </style>
+
+    <script>
+      // select all input elements if they have a parent class of controls
+      // inputs is a nodelist, which is different from an array
+      // since we will be using a .forEach method available on the nodelist prototype,
+      // we do not need to convert inputs into an array
+      const inputs = document.querySelectorAll(".controls input");
+
+      // callback function for the event listener on each input element
+      function handleUpdate() {
+        // dataset is an object that contains all the data attributes (data-xx) from that specific element
+        // adding a fallback in the case of when the sizing property is unavailable (ex. color)
+        const suffix = this.dataset.sizing || "";
+        // documentElement returns the root element of the document (for HTML, it will be <html>)
+        // setProperty method sets a new value for a property on a CSS style declaration object
+        document.documentElement.style.setProperty(
+          `--${this.name}`,
+          `${this.value}${suffix}`
+        );
+      }
+
+      // loop over inputs nodelist and attaching event listener to each input element
+      // input element will listen to the input and mousemove events
+      // and when those events are detected, it will call the callback function of handleUpdate
+      // instead of the change event, input is used to account for the dynamic color change
+      inputs.forEach((input) => input.addEventListener("input", handleUpdate));
+      inputs.forEach((input) =>
+        input.addEventListener("mousemove", handleUpdate)
+      );
+    </script>
+  </body>
+</html>
