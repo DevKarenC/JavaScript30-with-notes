@@ -4,6 +4,7 @@ This repository is created to record, share, and review what I have learned thro
 
 The original JavaScript30 exercises and the repostiroy can be found here: https://javascript30.com/ and https://github.com/wesbos/JavaScript30.
 
+
 ## Day 1: Drum Kit 🥁
 **Key Concepts Discussed** 
 1. [Data-attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
@@ -40,10 +41,20 @@ The original JavaScript30 exercises and the repostiroy can be found here: https:
 4. [reduce() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
 
+## Day 5: Flex Panels Gallery 🖼
+**Key Concepts Discussed**
+1. [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+2. [translateY CSS function](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateY())
+3. [:first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child) and [:last-child pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child)
+4. [cubic-bezier easing-function](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function)
+4a. [cubic-bezier generator](https://cubic-bezier.com/#.42,.19,.84,.19)
+5. [classList.toggle()](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+6. [transitionend event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitionend_event)
+
+
 ## Day 7: Array Cardio Part 2 💪
 **Key Concepts Discussed**
 1. [some() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 2. [every() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 3. [find() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 4. [findIndex() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
-
