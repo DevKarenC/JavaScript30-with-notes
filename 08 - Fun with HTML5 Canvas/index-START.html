@@ -1,0 +1,94 @@
+<!-- canvas tag, context properties and methods, array destructuring, hsl (hue, saturation, lightness) color -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 Canvas</title>
+  </head>
+  <body>
+    <canvas id="draw" width="800" height="800"></canvas>
+    <script>
+      const canvas = document.querySelector("#draw");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const ctx = canvas.getContext("2d");
+
+      // specifying color, gradient, or pattern for the strokes (outlines) around shapes
+      ctx.strokeStyle = "#BADA55";
+
+      // specifying the shape used to join two line segments
+      ctx.lineJoin = "round";
+
+      // specifying the shape used to draw the end points of lines
+      ctx.lineCap = "round";
+
+      // specifying the thickness of the stroke
+      ctx.lineWidth = 20;
+
+      // experimenting with different blend modes offered
+      // ctx.globalCompositeOperation = "multiply";
+
+      // "flag" to determine if the user is holding their mouse cursor or not
+      let isDrawing = false;
+
+      // to draw a line, you need both X and Y coordinates (starting and end points)
+      let lastX = 0;
+      let lastY = 0;
+
+      // to implement the cool rainbow color of the stroke
+      let hue = 0;
+
+      // to gradually increase and decrease the line width of the stroke
+      let direction = true;
+
+      function draw(e) {
+        if (!isDrawing) return;
+        ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+        ctx.beginPath();
+        ctx.moveTo(lastX, lastY);
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+        // ES6 Array Destructuring (the below line is the same as lastX = e.offsetX and lastY = e.offsetY)
+        [lastX, lastY] = [e.offsetX, e.offsetY];
+
+        hue++;
+        if (hue >= 360) {
+          hue = 0;
+        }
+
+        if (ctx.lineWidth >= 150 || ctx.lineWidth <= 1) {
+          direction = !direction;
+        }
+        if (direction) {
+          ctx.lineWidth++;
+        } else {
+          ctx.lineWidth--;
+        }
+      }
+
+      canvas.addEventListener("mousedown", function (e) {
+        isDrawing = true;
+        // we want to update the x and y coordinates based on where we clicked our mouse, instead of starting at 0 all the time!
+        [lastX, lastY] = [e.offsetX, e.offsetY];
+      });
+      canvas.addEventListener("mousemove", draw);
+      canvas.addEventListener("mouseup", function (e) {
+        isDrawing = false;
+      });
+
+      // handling the edge case of where the cursor exists the canvas, but the canvas thinks you are still drawing
+      canvas.addEventListener("mouseout", function (e) {
+        isDrawing = false;
+      });
+    </script>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+    </style>
+  </body>
+</html>
