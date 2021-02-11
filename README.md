@@ -74,3 +74,10 @@ The original JavaScript30 exercises and the repostiroy can be found here: https:
 3. Different context methods and properties such as [strokeStyle](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/strokeStyle), [lineJoin](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineJoin), [lineCap](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineCap), [beginPath()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/beginPath), [moveTo()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/moveTo), [lineTo()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineTo), [stroke()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/stroke)
 4. [Array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 5. [hsl colors - hue, saturation, lightness](https://mothereffinghsl.com/)
+
+## Day 9: Dev Tools Tricks 🧙🏻‍♀️
+
+**Key Concepts Discussed**
+
+1. [Break on DOM mutation](https://developer.mozilla.org/en-US/docs/Tools/Debugger/Break_on_DOM_mutation)
+2. [Different console methods and string substitutions](https://developer.mozilla.org/en-US/docs/Web/API/console)
