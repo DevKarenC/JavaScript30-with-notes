@@ -81,3 +81,11 @@ The original JavaScript30 exercises and the repostiroy can be found here: https:
 
 1. [Break on DOM mutation](https://developer.mozilla.org/en-US/docs/Tools/Debugger/Break_on_DOM_mutation)
 2. [Different console methods and string substitutions](https://developer.mozilla.org/en-US/docs/Web/API/console)
+
+## Day 10: Checkbox Challenge ✅
+
+**Key Concepts Discussed**
+
+1. [Different DOM Events](https://developer.mozilla.org/en-US/docs/Web/Events)
+2. [forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+3. [Input Type - Checkbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
