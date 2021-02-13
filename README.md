@@ -89,3 +89,13 @@ The original JavaScript30 exercises and the repostiroy can be found here: https:
 1. [Different DOM Events](https://developer.mozilla.org/en-US/docs/Web/Events)
 2. [forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 3. [Input Type - Checkbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
+
+## Day 11: Custom Video Player 📹 
+
+**Key Concepts Discussed**
+
+1. [HTMLMediaElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement)
+2. [Different DOM Events](https://developer.mozilla.org/en-US/docs/Web/Events)
+3. [Data-attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
+4. [Short-circuit Evaluation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation)
+5. [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
