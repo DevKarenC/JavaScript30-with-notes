@@ -99,3 +99,13 @@ The original JavaScript30 exercises and the repostiroy can be found here: https:
 3. [Data-attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
 4. [Short-circuit Evaluation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation)
 5. [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
+
+
+## Day 12: Key Sequence Detection ⬆️⬇️⬅️➡️
+
+**Key Concepts Discussed**
+
+1. [Konami Code](https://en.wikipedia.org/wiki/Konami_Code)
+2. [Different DOM Events](https://developer.mozilla.org/en-US/docs/Web/Events)
+3. [splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+4. [join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
