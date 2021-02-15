@@ -2,7 +2,7 @@
 
 This repository is created to record, share, and review what I have learned through Wes Bos' JavaScript30 exercises. I have summarized the key concepts discussed in each lesson with a link to the MDN documentation or other relevant resources for easier access in the future.
 
-The original JavaScript30 exercises and the repostiroy can be found here: https://javascript30.com/ and https://github.com/wesbos/JavaScript30.
+The original JavaScript30 exercises and the repository can be found here: https://javascript30.com/ and https://github.com/wesbos/JavaScript30.
 
 ## Day 1: Drum Kit 🥁
 
