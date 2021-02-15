@@ -23,7 +23,7 @@ The original JavaScript30 exercises and the repostiroy can be found here: https:
 3. [transform-origin CSS Property](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
 4. [transition-timing-function CSS Property](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function)
 
-## Day 3: CSS Variables 👀
+## Day 3: CSS Variables ⚡️
 
 **Key Concepts Discussed**
 
@@ -109,3 +109,14 @@ The original JavaScript30 exercises and the repostiroy can be found here: https:
 2. [Different DOM Events](https://developer.mozilla.org/en-US/docs/Web/Events)
 3. [splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 4. [join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+
+## Day 13: Slide-in on Scroll 👀
+
+**Key Concepts Discussed**
+
+1. [Scroll Event](https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event)
+2. [Debounce Function](https://davidwalsh.name/javascript-debounce-function)
+3. [Debounce vs Throttle Demo](http://demo.nimius.net/debounce_throttle/) and [CSS Tricks - Debounce vs Throttle](https://css-tricks.com/debouncing-throttling-explained-examples/) - Throttle is not mentioned in this lesson but it is often discussed with debounce
+4. [window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY)
+5. [window.innerHeight](https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight)
+6. [HTMLElement.offsetTop](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop)
