@@ -1,0 +1,31 @@
+<!-- konami code, event listeners, .splice(), .join() -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Key Detection</title>
+    <script
+      type="text/javascript"
+      src="https://www.cornify.com/js/cornify.js"
+    ></script>
+  </head>
+  <body>
+    <script>
+      const pressed = [];
+      const secretCode = "karen";
+      window.addEventListener("keyup", function (e) {
+        pressed.push(e.key);
+        // if the keys pressed length is getting longer than our secret code, we will remove one character from the first index (0)
+        // so that we can compare the last 5 (our secret code's length) characters typed by the user.
+        // the moment the pressed's length goes over the secret code's length (ex. 6 > 5), the pressed array will get shorter by one element.
+        if (pressed.length > secretCode.length) {
+          pressed.splice(0, 1);
+        }
+        if (pressed.join("") === secretCode) {
+          cornify_add();
+        }
+      });
+    </script>
+  </body>
+</html>
