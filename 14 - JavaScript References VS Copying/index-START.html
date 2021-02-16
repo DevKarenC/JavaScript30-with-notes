@@ -1,0 +1,105 @@
+<!-- primitive data types, pass by reference, pass by value, slice(), concat(), spread syntax, Array.from(), Object.assign(), shallow vs deep copy, JSON.stringify, JSON.parse -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Reference VS Copy</title>
+  </head>
+  <body>
+    <script>
+      // start with strings, numbers and booleans
+      let age = 100;
+      let age2 = age;
+      console.log(age, age2); // 100, 100
+      age = 200;
+      console.log(age, age2); // 200, 100
+
+      let name = "Wes";
+      let name2 = name;
+      console.log(name, name2); // "Wes", "Wes"
+      name = "Wesley";
+      console.log(name, name2); // "Wesley", "Wes"
+
+      // Let's say we have an array
+      const players = ["Wes", "Sarah", "Ryan", "Poppy"];
+
+      // and we want to make a copy of it.
+      // team is not a new array - it's a reference to the array players.
+      const team = players;
+      console.log(players, team);
+
+      // You might think we can just do something like this:
+      team[3] = "Lux";
+      console.log(team); // ["Wes", "Sarah", "Ryan", "Lux"]
+
+      // however what happens when we update that array?
+      // now here is the problem!
+      // oh no - we have edited the original array too!
+      console.log(players); // ["Wes", "Sarah", "Ryan", "Lux"]
+
+      // Why? It's because that is an array reference, not an array copy. They both point to the same array!
+
+      // So, how do we fix this? We make a copy instead!
+      // one way using .slice()
+      const team2 = players.slice();
+
+      // or create a new array and concat the old one in
+      const team3 = [].concat(players);
+
+      // or use the new ES6 Spread Operator
+      const team4 = [...players];
+
+      // or use the Array.from() method
+      const team5 = Array.from(players);
+
+      // now when we update it, the original one isn't changed
+
+      // The same thing goes for objects, let's say we have a person object
+
+      // with Objects
+      const person = {
+        name: "Wes Bos",
+        age: 80,
+      };
+
+      // and think we make a copy (we CANNOT do this):
+      const captain = person;
+      captain.number = 99;
+      console.log(captain); // { name: "Wes Bos", age: 80, number: 99 }
+      console.log(person); // { name: "Wes Bos", age: 80, number: 99 }
+
+      // how do we make a copy instead?
+      // use the Object.assign(target, ...sources) method
+      const captain2 = Object.assign({}, person, { number: 99 });
+      console.log(captain2); // { name: "Wes Bos", age: 80, number: 99 }
+      console.log(person); // { name: "Wes Bos", age: 80 }
+
+      // We can also make a (shallow) copy of the object using ...spread syntax.
+      // A shallow copy means that certain values (ex. nested objects)are still connected to the original variable.
+      const captain3 = { ...person };
+      console.log(captain3); // { name: "Wes Bos", age: 80 }
+
+      // Things to note - this is only 1 level deep - both for Arrays and Objects.
+      const wes = {
+        name: "Wes",
+        age: 100,
+        social: {
+          twitter: "@wesbos",
+          facebook: "wesbos.developer",
+        },
+      };
+
+      const captain4 = Object.assign({}, wes);
+      captain4.social.twitter = "coolman";
+      console.log(captain4.social); // Object {twitter: "@coolman", facebook: "wesbos.developer"}
+      // Because only a shallow copy was made, the original object is also affected.
+      console.log(wes.social); // Object {twitter: "@coolman", facebook: "wesbos.developer"}
+
+      // lodash library has a cloneDeep method, but you should think twice before using it.
+      // another way to deep clone using JSON.parse and JSON.stringify
+      // JSON.stringify converts the object into a string, and JSON.parse turns it back into an object
+      const captain5 = JSON.parse(JSON.stringify(wes));
+    </script>
+  </body>
+</html>
