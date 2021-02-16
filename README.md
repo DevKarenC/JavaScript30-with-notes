@@ -120,3 +120,16 @@ The original JavaScript30 exercises and the repository can be found here: https:
 4. [window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY)
 5. [window.innerHeight](https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight)
 6. [HTMLElement.offsetTop](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop)
+
+## Day 14: Reference vs. Copy 👩🏻👩🏻
+
+**Key Concepts Discussed**
+1. [JavaScript Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+2. [Pass by Value vs. Pass by Reference](https://www.geeksforgeeks.org/reference-and-copy-variables-in-javascript/)
+3. [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+4. [concat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
+5. [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+6. [Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+7. [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+8. [Shallow vs. Deep copy](https://www.freecodecamp.org/news/copying-stuff-in-javascript-how-to-differentiate-between-deep-and-shallow-copies-b6d8c1ef09cd/)
+9. [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) and [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
