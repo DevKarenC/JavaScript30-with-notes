@@ -1,0 +1,79 @@
+<!-- event capture, propagation (e.stopPropagation()), bubbling, once -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Understanding JavaScript's Capture</title>
+  </head>
+  <body class="bod">
+    <div class="one">
+      <div class="two">
+        <div class="three"></div>
+      </div>
+    </div>
+
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      div {
+        width: 100%;
+        padding: 100px;
+      }
+
+      .one {
+        background: thistle;
+      }
+
+      .two {
+        background: mistyrose;
+      }
+
+      .three {
+        background: coral;
+      }
+    </style>
+
+    <button>Checkout 🛍</button>
+    <script>
+      const divs = document.querySelectorAll("div");
+      const button = document.querySelector("button");
+
+      // when we click on the coral background, we would expect to only see "three" logged to the console.
+      // but we actually see "three", "two", and "one" as well! This is due to the concept of Bubbling.
+      // When you are listening to the event in nested elements, and any of those elements have a listener attached,
+      // the event for the inner (most-nested) element will trigger one for all outer (least-nested) elements.
+      // The 3 phases of event propagation are: 1. capturing, 2. target, 3. bubbling
+      function logText(e) {
+        console.log(this.classList.value);
+        // stop bubbling - only the classList value for the inner-most element will log to the console
+        e.stopPropagation();
+      }
+
+      divs.forEach((div) =>
+        // capture: setting the capture property as true will run the handler from outer to inner
+        // the default setting is capture: false
+        // once: setting the once property as true will unbind the event listener after the handler function runs once.
+        // essentially the same as div.removeEventListener("click", logText)
+        div.addEventListener("click", logText, { capture: false, once: true })
+      );
+
+      // once property can be useful for buttons like checkout to prevent users from being able to click multiple times
+      button.addEventListener(
+        "click",
+        () => {
+          console.log("Please wait... Checkout in Progress");
+        },
+        { once: true }
+      );
+    </script>
+  </body>
+</html>
