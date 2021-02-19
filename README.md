@@ -123,6 +123,13 @@ The original JavaScript30 exercises and the repository can be found here: https:
 10. [Element.matches()](https://developer.mozilla.org/en-US/docs/Web/API/Element/matches)
 11. [Data-attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
 
+## Day 16: Mouse Move Shadow 🖱
+
+1. [offsetWidth](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetWidth) and [offsetHeight](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight)
+2. [clientX vs pageX vs screenX vs offsetX](https://www.youtube.com/watch?v=dxADq_DlS-w) - only offsetXY property was discussed, but knowing the differences between different properties seems useful.
+3. [Object Destructuring](https://wesbos.com/destructuring-objects) and [Renaming](https://wesbos.com/destructuring-renaming)
+4. [text-shadow CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
+
 ## Day 25: Event Capture, Propagation, Bubbling, and Once 🔲
 
 1. [Event Bubbling, Capture, stopPropagation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling_and_capture)
