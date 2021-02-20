@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sort Without Articles</title>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      #bands {
+        list-style: inside square;
+        font-size: 20px;
+        background: white;
+        width: 500px;
+        margin: auto;
+        padding: 0;
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+      }
+
+      #bands li {
+        border-bottom: 1px solid #efefef;
+        padding: 20px;
+      }
+
+      #bands li:last-child {
+        border-bottom: 0;
+      }
+
+      a {
+        color: #ffc600;
+        text-decoration: none;
+      }
+    </style>
+
+    <ul id="bands"></ul>
+
+    <script>
+      const bands = [
+        "The Plot in You",
+        "The Devil Wears Prada",
+        "Pierce the Veil",
+        "Norma Jean",
+        "The Bled",
+        "Say Anything",
+        "The Midway State",
+        "We Came as Romans",
+        "Counterparts",
+        "Oh, Sleeper",
+        "A Skylit Drive",
+        "Anywhere But Here",
+        "An Old Dog",
+      ];
+
+      // Goal:
+      // The band names should be sorted without articles
+      // But the original band names should be displayed (including the articles)
+
+      const articles = ["The", "A", "An"];
+
+      const sortedBands = bands.sort(function (band1, band2) {
+        let band1Arr = band1.split(" ");
+        let band2Arr = band2.split(" ");
+        if (articles.includes(band1Arr[0])) {
+          band1Arr.shift();
+        }
+        if (articles.includes(band2Arr[0])) {
+          band2Arr.shift();
+        }
+        if (band1Arr.join(" ") < band2Arr.join(" ")) {
+          return -1;
+        } else if (band1Arr.join(" ") > band2Arr.join(" ")) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+
+      const list = document.querySelector("#bands");
+
+      // 1. using innerHTML to append the band list items
+      // sortedBands.forEach((band) => {
+      //   list.innerHTML += `<li>${band}</li>`;
+      // });
+
+      // Or 2. creating a list element, appending text and then appending to the list
+      sortedBands.forEach((band) => {
+        const listItem = document.createElement("li");
+        listItem.textContent = band;
+        list.append(listItem);
+      });
+    </script>
+  </body>
+</html>
