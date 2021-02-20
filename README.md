@@ -130,6 +130,13 @@ The original JavaScript30 exercises and the repository can be found here: https:
 3. [Object Destructuring](https://wesbos.com/destructuring-objects) and [Renaming](https://wesbos.com/destructuring-renaming)
 4. [text-shadow CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
 
+## Day 17: Sort Band Names Without Articles 👩🏻‍🎤
+
+1. [sort() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+2. [replace() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+3. [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+4. [Element.innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+
 ## Day 25: Event Capture, Propagation, Bubbling, and Once 🔲
 
 1. [Event Bubbling, Capture, stopPropagation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling_and_capture)
@@ -137,3 +144,4 @@ The original JavaScript30 exercises and the repository can be found here: https:
 3. [e.stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
 4. [Event Propagation MDN Example](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples#example_5_event_propagation)
 5. [FreeCodeCamp article about Event Propagation](https://www.freecodecamp.org/news/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e/)
+
