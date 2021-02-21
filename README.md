@@ -137,6 +137,18 @@ The original JavaScript30 exercises and the repository can be found here: https:
 3. [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 4. [Element.innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
 
+## Day 18: Adding Up Times with Reduce ⏳
+<!-- Array.from(), nodelist, .split(), ES6 destructuring, passing in only the callback function to .map(), .reduce(), Math.floor(), modulo (%), -->
+1. [Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+2. [Nodelist](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)
+3. [String split() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+4. [Array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+5. [Array map() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) and [only passing in a function without arguments](https://stackoverflow.com/questions/49104825/why-dont-i-pass-any-parameters-to-a-function-within-map) and also [tricky use case with a function that accepts optional arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#tricky_use_case)
+6. [Array reduce() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+7. [Math.floor() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
+8. [Remainder/Modulo (%) Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
+
+
 ## Day 25: Event Capture, Propagation, Bubbling, and Once 🔲
 
 1. [Event Bubbling, Capture, stopPropagation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling_and_capture)
@@ -144,4 +156,6 @@ The original JavaScript30 exercises and the repository can be found here: https:
 3. [e.stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
 4. [Event Propagation MDN Example](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples#example_5_event_propagation)
 5. [FreeCodeCamp article about Event Propagation](https://www.freecodecamp.org/news/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e/)
+
+
 
