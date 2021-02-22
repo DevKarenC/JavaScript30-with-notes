@@ -138,7 +138,7 @@ The original JavaScript30 exercises and the repository can be found here: https:
 4. [Element.innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
 
 ## Day 18: Adding Up Times with Reduce ⏳
-<!-- Array.from(), nodelist, .split(), ES6 destructuring, passing in only the callback function to .map(), .reduce(), Math.floor(), modulo (%), -->
+
 1. [Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
 2. [Nodelist](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)
 3. [String split() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
@@ -148,6 +148,16 @@ The original JavaScript30 exercises and the repository can be found here: https:
 7. [Math.floor() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
 8. [Remainder/Modulo (%) Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
 
+## Day 19: Webcam Fun 📸
+<!-- npm install, MediaDevices.getUserMedia, Promise, .then(), .catch(), video.srcObject, setInterval(), .getImageData() -->
+1. [npm install without arguments](https://docs.npmjs.com/cli/v6/commands/npm-install)
+2. [navigator.mediaDevices.getUserMedia()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)
+3. [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and [Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+4. [then() method on Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+5. [catch() method on Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
+6. [setting srcObject property instead of src on video](https://stackoverflow.com/questions/53626318/chrome-update-failed-to-execute-createobjecturl-on-url/53734174)
+7. [setInterval Web API method](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)
+8. [getImageData](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData)
 
 ## Day 25: Event Capture, Propagation, Bubbling, and Once 🔲
 
@@ -156,6 +166,3 @@ The original JavaScript30 exercises and the repository can be found here: https:
 3. [e.stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
 4. [Event Propagation MDN Example](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples#example_5_event_propagation)
 5. [FreeCodeCamp article about Event Propagation](https://www.freecodecamp.org/news/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e/)
-
-
-
