@@ -159,6 +159,14 @@ The original JavaScript30 exercises and the repository can be found here: https:
 7. [setInterval Web API method](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)
 8. [getImageData](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData)
 
+## Day 20: Speech Recognition 🎙
+
+1. [Web Speech API - SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)
+2. [SpeechRecognition interface - interimResults property](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/interimResults)
+3. [result](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/result_event) and [end events of SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/end_event)
+4. [isFinal property](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognitionResult/isFinal)
+5. [contenteditable attribute on HTML element](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content)
+
 ## Day 25: Event Capture, Propagation, Bubbling, and Once 🔲
 
 1. [Event Bubbling, Capture, stopPropagation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling_and_capture)
