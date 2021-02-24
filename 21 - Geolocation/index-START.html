@@ -1,4 +1,4 @@
-<!-- Navigator.geolocation, getCurrentPosition(), watchPosition(), GeolocationCoordinates interface, speed and heading properties,  -->
+<!-- Xcode Simulator, Navigator.geolocation, getCurrentPosition(), watchPosition(), GeolocationCoordinates interface, speed and heading properties -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -108,6 +108,7 @@
           speed.textContent = data.coords.speed;
           arrow.style.transform = `rotate(${data.coords.heading}deg)`;
         },
+        // in case the user denies location access
         (err) => {
           console.log(err);
           alert("Please allow the location access.");
