@@ -167,6 +167,15 @@ The original JavaScript30 exercises and the repository can be found here: https:
 4. [isFinal property](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognitionResult/isFinal)
 5. [contenteditable attribute on HTML element](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content)
 
+## Day 21: Geolocation-based Speedometer and Compass 📍
+
+1. [Xcode simulator](https://developer.apple.com/documentation/xcode/running_your_app_in_the_simulator_or_on_a_device)
+2. [Navigator.geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/geolocation)
+3. [getCurrentPosition()](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition)
+4. [watchPosition()](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/watchPosition)
+5. [GeolocationCoordinates interface](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates)
+6. [speed](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates/speed) and [heading](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates/heading) properties
+
 ## Day 25: Event Capture, Propagation, Bubbling, and Once 🔲
 
 1. [Event Bubbling, Capture, stopPropagation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling_and_capture)
