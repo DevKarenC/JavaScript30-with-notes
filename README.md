@@ -176,6 +176,12 @@ The original JavaScript30 exercises and the repository can be found here: https:
 5. [GeolocationCoordinates interface](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates)
 6. [speed](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates/speed) and [heading](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates/heading) properties
 
+## Day 22: Follow Along Link Highlighter ☁️
+1. [Element.getBoundingClientRect() method](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
+2. [window.scrollX](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX) and [window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY) properties
+3. [transform CSS Property](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+4. [translate() CSS function](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate())
+
 ## Day 25: Event Capture, Propagation, Bubbling, and Once 🔲
 
 1. [Event Bubbling, Capture, stopPropagation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling_and_capture)
