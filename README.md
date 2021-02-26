@@ -189,3 +189,10 @@ The original JavaScript30 exercises and the repository can be found here: https:
 3. [e.stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
 4. [Event Propagation MDN Example](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples#example_5_event_propagation)
 5. [FreeCodeCamp article about Event Propagation](https://www.freecodecamp.org/news/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e/)
+
+## Day 26: Stripe Follow Along Navigation 👀
+
+1. [setTimeout and "this" keyword](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout#the_this_problem)
+2. [arrow function scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+3. [CSS display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) and [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) properties - these two properties can remain in two different classes to create a transition effect
+4. [Element.getBoundingClientRect() method](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect) - this method cannot be used with display: none
