@@ -193,6 +193,13 @@ The original JavaScript30 exercises and the repository can be found here: https:
 3. [transform CSS Property](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
 4. [translate() CSS function](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate())
 
+## Day 23: Speech Synthesis 🗣
+1. [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)
+2. [SpeechSynthesis.getVoices()](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/getVoices), [speak() method](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/speak), [cancel() method](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/cancel), and [voiceschanged event](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/voiceschanged_event)
+3. [SpeechSynthesisUtterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance)
+4. [Attribute Selectors (example: [attr=value])](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors#presence_and_value_selectors)
+5. [Array.prototype.find() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+
 ## Day 25: Event Capture, Propagation, Bubbling, and Once 🔲
 
 1. [Event Bubbling, Capture, stopPropagation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling_and_capture)
