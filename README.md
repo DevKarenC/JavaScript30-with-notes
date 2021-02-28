@@ -46,6 +46,17 @@ The original JavaScript30 exercises and the repository can be found here: https:
 5. [classList.toggle()](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 6. [transitionend event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitionend_event)
 
+## Day 6: Type Ahead 🔮
+
+1. [fetch() method](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+2. [response.json() method](https://developer.mozilla.org/en-US/docs/Web/API/Body/json)
+3. [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+4. [filter() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+5. [new RegExp()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/RegExp)
+6. [regex modifiers such as g](https://www.w3schools.com/jsref/jsref_regexp_g.asp) and [i](https://www.w3schools.com/jsref/jsref_regexp_i.asp)
+7. [String.prototype.match() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
+8. [String.prototype.replace() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+
 ## Day 7: Array Cardio Part 2 💪
 
 1. [some() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
