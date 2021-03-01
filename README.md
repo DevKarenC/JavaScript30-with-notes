@@ -200,6 +200,16 @@ The original JavaScript30 exercises and the repository can be found here: https:
 4. [Attribute Selectors (example: [attr=value])](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors#presence_and_value_selectors)
 5. [Array.prototype.find() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
+## Day 24: Sticky Nav 🩹
+
+1. [HTMLElement.offsetTop](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop) - Distance of the outer border of the current element relative to the inner border of the top of the offsetParent node.
+2. [HTMLElement.offsetHeight](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight) - Height of an element, including vertical padding and borders. In the lesson, it was used to add extra space for the fixed positioned nav element.
+3. [Window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY) - Number of pixels that the document is currently scrolled vertically.
+4. [Fixed Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) - The element is removed from the normal document flow, and no space is created for the element in the page layout.
+5. [CSS Descendant Combinators](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator) - Combines two selectors such that elements matched by the second selector are selected if they have an ancestor (parent, parent's parent, parent's parent's parent, etc) element matching the first selector.
+6. [width vs. max-width](https://www.w3schools.com/css/css_max-width.asp) - To add the transition effect, `max-width` should be used instead of the `width` property.
+7. [transform: scale()](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale()) - Resizes an element on the 2D plane.
+
 ## Day 25: Event Capture, Propagation, Bubbling, and Once 🔲
 
 1. [Event Bubbling, Capture, stopPropagation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling_and_capture)
