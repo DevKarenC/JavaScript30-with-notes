@@ -278,7 +278,6 @@
 
       function fixNav() {
         if (window.scrollY >= topOfNav) {
-          console.log(nav.offsetHeight);
           // no space is created for the fixed position element in the page, so we add back the space
           document.body.style.paddingTop = `${nav.offsetHeight}px`;
           // add class to the parent div so we can apply different styles to the descendants
