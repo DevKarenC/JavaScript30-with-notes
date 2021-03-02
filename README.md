@@ -224,3 +224,12 @@ The original JavaScript30 exercises and the repository can be found here: https:
 2. [arrow function scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 3. [CSS display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) and [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) properties - these two properties can remain in two different classes to create a transition effect
 4. [Element.getBoundingClientRect() method](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect) - this method cannot be used with display: none
+
+## Day 27: Click and Drag ↔️
+
+1. [Different DOM Events such as mousedown, mouseup, mouseleave, mousemove](https://developer.mozilla.org/en-US/docs/Web/Events)
+2. [Cursor types such as grabbing](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+3. [MouseEvent.pageX](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageX) - Returns the horizontal (x) coordinate, in pixels, at which the mouse was clicked, relative to the left edge of the entire document.
+4. [Element.offsetLeft](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetLeft) - Returns the number of pixels that the upper left corner of the current element is offset to the left within the HTMLElement.offsetParent node.
+5. [Element.scrollLeft](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft) - The number of pixels that an element's content is scrolled from its left edge.
+6. [Naming logged variables with curly braces](https://dmitripavlutin.com/console-log-tips/)
