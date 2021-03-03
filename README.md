@@ -91,7 +91,6 @@ The original JavaScript30 exercises and the repository can be found here: https:
 4. [Short-circuit Evaluation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation)
 5. [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
 
-
 ## Day 12: Key Sequence Detection ⬆️⬇️⬅️➡️
 
 1. [Konami Code](https://en.wikipedia.org/wiki/Konami_Code)
@@ -233,3 +232,12 @@ The original JavaScript30 exercises and the repository can be found here: https:
 4. [Element.offsetLeft](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetLeft) - Returns the number of pixels that the upper left corner of the current element is offset to the left within the HTMLElement.offsetParent node.
 5. [Element.scrollLeft](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft) - The number of pixels that an element's content is scrolled from its left edge.
 6. [Naming logged variables with curly braces](https://dmitripavlutin.com/console-log-tips/)
+
+## Day 28: Video Speed Controller 🎮
+
+1. [mousemove event](https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event)
+2. [MouseEvent.pageY](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageY) - Returns the vertical (y) coordinate in pixels of the event relative to the whole document.
+3. [Element.offsetTop](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop) - Returns the distance of the outer border of the current element relative to the inner border of the top of the offsetParent node.
+4. [Element.offsetHeight](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight) - Returns the height of an element, including vertical padding and borders, as an integer.
+5. [Number.prototype.toFixed()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) - Formats a number using fixed-point notation and returns a string.
+6. [HTMLMediaElement.playbackRate](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/playbackRate)
