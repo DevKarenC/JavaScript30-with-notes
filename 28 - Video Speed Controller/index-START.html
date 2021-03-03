@@ -1,0 +1,52 @@
+<!-- mousemove event, MouseEvent.pageY, offsetTop, offsetHeight, toFixed, HTMLMediaElement.playbackRate -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video Speed Scrubber</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <video
+        class="flex"
+        width="765"
+        height="430"
+        src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        loop
+        controls
+      ></video>
+      <div class="speed">
+        <div class="speed-bar">1×</div>
+      </div>
+    </div>
+
+    <script>
+      const speed = document.querySelector(".speed");
+      const bar = speed.querySelector(".speed-bar");
+      const video = document.querySelector(".flex");
+
+      speed.addEventListener("mousemove", function (e) {
+        // we subtract the offsetTop property of the speed element to account for the space between the element and the parent element
+        // since the element would not always be at the top of the div - there can be margin or padding
+        const y = e.pageY - this.offsetTop;
+
+        // to get the percentage of where the cursor is in respect to the speed bar element, we can divide y by the height of the element
+        const percent = y / this.offsetHeight;
+
+        // set the min and max video speed
+        const min = 0.4;
+        const max = 4;
+
+        const height = `${Math.round(percent * 100)}%`;
+        const playbackRate = percent * (max - min) + min;
+
+        bar.style.height = height;
+        bar.textContent = `${playbackRate.toFixed(2)}x`;
+
+        video.playbackRate = playbackRate;
+      });
+    </script>
+  </body>
+</html>
